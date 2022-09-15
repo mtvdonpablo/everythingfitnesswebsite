@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+    overflow-x: hidden;
+ }
+
+body{
+    background-color: white;
+}
+.container{
+  min-height: 100vh;
+}
+.about-container{
+  min-height: 100vh;
+}
+
+
+.logo{
+  background-color: black ;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/*#32CD32*/
+.logo  img{
+  display: block;
+  margin:auto;
+}
+
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.nav-links li::after {
+  text-decoration: none;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #32CD32;
+  display: block;
+  margin: auto;
+  transition: 0.4s;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 4px;
+  background-color: #32CD32;
+  transition: all 0.5s ease;
+}
+
+.burger {
+  /*transform: translateY(-5px);*/
+  display: none;
+  cursor: pointer;
+}
+/* Nav End */
+
+/* intro container */
+
+.intro-container{
+  color: black;
+  /*background-color: blanchedalmond;*/
+  width: 60%;
+  margin:auto;
+  padding-bottom: 2%;
+}
+.headline{
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 3%;
+}
+.description{
+  padding-top: 1%;
+}
+.slogan{
+  text-align: center;
+}
+.slogan .s{
+  font-family: 'Cedarville Cursive ', cursive; 
+
+}
+/* intro container end */
+
+.footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+
+}
+.footer-links{
+  display: flex;
+  justify-content: center;
+
+}
+.footer-links li{
+  width: 15%;
+}
+.footer-links a{
+  text-decoration: none;
+  color: white;
+}
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+.social{
+  background-color: black;
+}
+.contact{
+  color: white;
+  text-align: center;
+  background-color: black;
+  width: 30%;
+  margin: auto; 
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:0px solid #ccc;
+  color:inherit;
+  opacity:0.75;
+  
+}
+
+ .social > a:hover {
+  opacity:1;
+  background-color: #32CD32;
+}
+
+.copyright {
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+
+/* Buttons*/
+.butn{
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.button-TT {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border: 3px black solid;
+  font-size: 17px;
+  background: white;
+  cursor: pointer;
+  padding: 30px;
+}
+.button-TT:hover {
+  border: 3px solid #32CD32;
+  background: #32CD32;
+  transition: 0.5s;
+}
+
+
+.but-JN{
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border: 3px black solid;
+  font-size: 17px;
+  background: white;
+  cursor: pointer;
+  padding: 30px 35px;
+
+}
+.but-JN:hover {
+  border: 3px solid #32CD32;
+  background: #32CD32;
+  transition: 0.9s;
+}
+/* Buttons end*/
+
+/*features*/
+.features{
+  margin: auto;
+}
+.features h1{
+  text-align: center;
+  font-size: 3rem;
+}
+.card-container{
+  padding-bottom: 3%;
+  display: flex;
+}
+.card {
+  width: 25%;
+  height: 400px;
+  margin: auto;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0px rgba(0,0,0,0.5);
+  transition: 0.3s;
+  background-color: Gainsboro;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.7);
+}
+hr.rounded {
+  border-top: 4px solid black;
+  border-radius: 5px;
+}
+
+.items{
+  font-size: 1.6rem;
+}
+.Amenities{
+  padding-top: 20px;
+
+}
+.days{
+  text-align: center;
+  padding-top: 15px;
+}
+.times{
+  text-align: center;
+}
+.timesa{
+  text-align: center;
+  padding-top: 30px;
+}
+/*features end*/
+
+
+
+
+
+
+/* intro container end */
+
+
+/*Slideshow */
+/* Slideshow container */
+.slideshow-container {
+  width: 40%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: solid 10px black;
+
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #32CD32;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*slideshow end*/
+
+
+
+/* About page*/
+.about-container{
+  background-color: black;
+  min-height: 0vh;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  
+
+}
+.main{
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.about-butn{
+  text-align: center;
+}
+.about-row{
+  display: flex;
+  height: 57.4vh;
+}
+
+.text-block{
+  width: 60%;
+  font-size: 1.2vw;
+  color: black;
+  padding: 1em;
+  
+  
+}
+
+
+
+
+/* About page SS*/
+
+.about-slideshow{
+  border: 2px solid red;
+}
+
+
+
+/*slideshow stuff*/
+
+.carousel {
+  height: 100%;
+  width: 45%;
+  position: relative;
+}
+
+.carousel__item {
+  height: 100%;
+  padding: 1em;
+  display: none;
+
+}
+.carousel__item img{
+  border: 5px solid black;
+  height: 410px;
+
+}
+
+
+.carousel__item--selected {
+  display: block;
+  height: 100%;
+}
+
+.carousel__nav {
+  width: 100%;
+  /*padding: 5px 0;*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background: grey;
+  border-radius: 50%;
+  margin: 1% 5px;
+  cursor: pointer;
+}
+
+.carousel__button--selected {
+  background: #32CD32/*rgba(255, 255, 255, 0.5)*/;
+}
+
+/*slideshow stuff*/
+
+
+/* About page SS end*/
+
+/* About page end*/
+
+/* trainers page */
+.row-train{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px ;
+}
+.card-trainers {
+  box-shadow: 0 4px 8px 0px rgba(0,0,0,0.5);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.card-trainers .timg{
+  height: 300px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+.row-train a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+
+.text-box-trainers{
+  font-size: 2vh;
+}
+.text-box-trainers p{
+  width: 90%;
+  margin: auto;
+}
+.text-box-trainers h2{
+  text-align: center;
+}
+.p1{
+   display: flex;
+   justify-content: center;
+}
+.person-1{
+  padding-bottom: 1%;
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 180px;
+}
+
+
+
+div.gallery img {
+  width: 100%;
+  height: 250px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* trainers page end*/
+
+
+
+/* efa */
+.efa-container{
+  background-color: red;
+  height: 100vh;
+}
+/* efa  end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Nav Media query */
+@media screen and (max-width: 980px) {
+  /*Nav bar responive*/
+  .logo {
+    align-items: center;
+  }
+  
+  .logo a{
+    width: 60%;
+    
+  }
+  .logo img{
+    width: 100%;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  /*Nav bar responive end*/
+}
+/* Nav Media queryEnd */
+
+
+/* Navbar animation */
+
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-3px, 3px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+/* Navbar animation End */
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0",maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name = "robots" content = "index,follow">
+     <!--   WEB PAGE Icon -->
+    <link rel="icon" href="imgs/exercise_cardio_running_treadmill_fitness_diet_icon_149037.png">
+
+     <!--  Custom CSS  -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen">
+    <!-- Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <title>About Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img height="80px"  src="imgs/everything-fitness-logo.png" ></a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+            
+        <nav>
+       
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+
+                <li>
+                    <a href="#">Elite Fighting Academy</a>
+                </li>
+                <li>
+                    <a href="https://www.myfitnesspal.com/account/login">Meal Planning</a>
+                </li>
+
+                <li>
+                    <a href="https://stayfit.antaris.ca/v2/online_memberships.php">Prices</a>
+                </li>
+                <li>
+                    <a href="trainers.html">Trainers</a>
+                </li>
+            </ul> 
+        </nav>
+    </header> 
+    <div class="about-container">
+        <div class="main">
+            
+            <div class="about-row">
+                <div class="text-block">
+                    <p>
+                    We are a 17,000 + square foot facility that is family owned and operated gym. We have serviced Guelph for over 20 years. We take pride in what we do and practice what we preach.  EVERYTHING FITNESS (StayFit) was the first gym in Guelph to bring you a martial arts facility all under one roof called Elite Fighting Academy. Elite Fighting academy is a high level Olympic Tae Kwon Do school. Elite Fighting is also a great way to get in shape or get in better shape :)  We were also the first to bring you 24/7-365 fitness "Fitness that Fits your schedule" so you can work out any time or day of the year. Are doors are always open to any member 18 years of age or older.
+                    At EVERYTHING FITNESS (StayFit) we have the best Personal Trainers in Canada and the best prices so it is affordable for everyone. EVERYTHING FITNESS (StayFit) has a great atmosphere that everyone loves to work out in.  We also offers a wide variety of fitness classes like Box Fit, Yoga, Pilates, Boot camps, Zumba and many more.</p>
+                    <p>
+                        We also provide a woman's only area, large change rooms with lots of lockers, saunas in each change room and private showers. We carry a wide variety of free weights and Hammer Strength machines and a wide selection of cardio equipment so no one has to wait around. We are one of the only gyms that offer a program for people that have never been in a gym before or are just getting back after a long lay-off called the <b>Smart Start Program</b>, this way you let us do all of the planning for you. The Smart Start Program offers information on nutrition, the benefits of working out, stretching and staying active. It also offers great recipes and work out programs.
+                    </p>
+                </div>
+                <div class="carousel">
+
+                    <div class="carousel__item"><img src="imgs/about/243500854_5043144355713935_2194601012253165332_n.jpeg" ></div>
+                    <div class="carousel__item"><img src="imgs/about/104469824_3610061465688905_8233066229084421628_n.jpeg" ></div>
+                    <div class="carousel__item"><img src="imgs/about/ggmm.jpeg" ></div>
+    
+                </div>
+            </div>
+            <div class="about-butn">
+                <a href="trainers.html" class="button-TT">Personal Trainers </a>
+                <a href="https://www.myfitnesspal.com/account/login" class="button-TT">Meal Planning </a>
+            </div>
+            
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+    <div class="footer">
+        <ul class="footer-links">
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a href="about.html">About</a>
+          </li>
+
+
+          <li>
+              <a href="#">Elite Fighting Academy</a>
+          </li>
+          <li>
+              <a href="https://www.myfitnesspal.com/account/login">Meal Planning</a>
+          </li>
+
+          <li>
+              <a href="https://stayfit.antaris.ca/v2/online_memberships.php">Prices</a>
+          </li>
+          <li>
+              <a href="trainers.html">Trainers</a>
+          </li>
+        </ul>
+        <div class="contact">
+            <p>Email: everythingfitnessguelph@gmail.com</p>
+            <p>Phone: 519-763-4422</p>
+            <dt>Address: 259 Grange Rd Guelph Ontario</dt>
+                 
+  
+  
+      </div>
+      <div class="social">
+  
+          <a href="https://www.instagram.com/everythingfitnessguelph/?hl=en"><i class="icon ion-social-instagram"></i></a>
+          <a href="https://www.facebook.com/everythingfitnessguelph/"><i class="icon ion-social-facebook"></i></a>
+          
+      </div>
+        <p class="copyright">Dawn of Design © 2022</p>
+    </div>   
+
+    <!-- JS -->
+    <script>
+document.querySelectorAll(".carousel").forEach((carousel) => {
+ const items = carousel.querySelectorAll(".carousel__item");
+ const buttonsHtml = Array.from(items, () => {
+   return `<span class="carousel__button"></span>`;
+ });
+
+ carousel.insertAdjacentHTML(
+   "beforeend",
+   `
+       <div class="carousel__nav">
+           ${buttonsHtml.join("")}
+       </div>
+   `
+ );
+
+ const buttons = carousel.querySelectorAll(".carousel__button");
+
+ buttons.forEach((button, i) => {
+   button.addEventListener("click", () => {
+     // un-select all the items
+     items.forEach((item) =>
+       item.classList.remove("carousel__item--selected")
+     );
+     buttons.forEach((button) =>
+       button.classList.remove("carousel__button--selected")
+     );
+
+     items[i].classList.add("carousel__item--selected");
+     button.classList.add("carousel__button--selected");
+   });
+ });
+
+ // Select the first item on page load
+ items[0].classList.add("carousel__item--selected");
+ buttons[0].classList.add("carousel__button--selected");
+});
+
+
+</script>
+
+
+</body>
+</html>
